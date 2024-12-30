@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+   
+</head>
+<body>
+<div id="contaner" class="">
+  
+  <!-- شريط التمرير العلوى -->
+  <div class="nav">
+    <nav>
+      <div id="slider-nav"><img src="images/icon-menu.svg" alt="" srcset=""></div>
+      <h1>Sneakers</h1>
+      <div id="x"><img src="images/icon-close.svg" alt="" srcset=""></div>
+      <ul>
+        <li data-aos="fade-right">Collections</li>
+        <li data-aos="fade-left">Men</li>
+        <li data-aos="fade-right">Women</li>
+        <li data-aos="fade-left">About</li>
+        <li data-aos="fade-right">Contact</li>
+      </ul>
+    </nav>
+    <div class="img">
+      <p id="p1"></p>
+      <img id="img1" src="images/icon-cart.svg" alt="" srcset="">
+      <img id="img2" src="images/image-avatar.png" alt="" srcset="">
+    </div>
+  </div>
+  <div class="border"></div>
+  <!-- شريط التمرير العلوى -->
+   <div id="car">
+     <h1>cart</h1>
+     <div class="hr"></div>
+     <div id="conter-img">
+      <div class="cart-img"><img src="images/image-product-1-thumbnail.jpg" alt="" srcset=""></div>
+      <div class="cart-text">
+        <h5> Fall Limited Edition Sneakers </h5>
+        <p> $125.00 x <span id="a"></span> <span id="b"></span></p>
+        <img id="delete" src="images/icon-delete.svg" alt="" srcset="">
+        
+      </div>
+     </div>
+     <button id="cart-but">Checkout</button>
+   </div>
+  <!-- دة الى شايل عرض المنتج و طلب الاوردر -->
+  <div id="Shopping-content">
+    <div id="contenr-slider">
+<div onclick="clk()" class="img-x"><img src="images/icon-close.svg" alt="" srcset=""></div>
+<div id="img-slider">
+  <img id="img3" src="images/image-product-1.jpg" alt="" srcset="">
+
+</div>
+<div id="min-slider">
+  <img onclick="im(1)" src="images/image-product-1-thumbnail.jpg" alt="" srcset="">
+  <img  onclick="im(2)" src="images/image-product-2-thumbnail.jpg" alt="" srcset="">
+  <img onclick="im(3)" src="images/image-product-3-thumbnail.jpg" alt="" srcset="">
+  <img   onclick="im(4)" src="images/image-product-4-thumbnail.jpg" alt="" srcset="">
+</div>
+    </div>
+    <!-- عرض صور المنتج -->
+    <div id="slider">
+      <div class="img-slider">
+        <div onclick="nn()" id="img-slider1"><img src="images/icon-previous.svg" alt="" srcset=""></div>
+        <div onclick="hh()" id="img-slider2"><img src="images/icon-next.svg" alt="" srcset=""></div>
+      </div>
+      <div class="imge">
+        <img id="img" src="images/image-product-1.jpg" alt="" srcset="">
+        
+      </div>
+      <div class="min-imge">
+        <img onmousemove="img1(1)" onclick="clck()"  src="images/image-product-1-thumbnail.jpg" alt="" srcset="">
+        <img onmousemove="img1(2)" onclick="clck()" src="images/image-product-2-thumbnail.jpg" alt="" srcset="">
+        <img onmousemove="img1(3)" onclick="clck()" src="images/image-product-3-thumbnail.jpg" alt="" srcset="">
+        <img onmousemove="img1(4)" onclick="clck()" src="images/image-product-4-thumbnail.jpg" alt="" srcset="">
+      </div>
+    </div>
+    <!-- عرض صور المنتج -->
+    <div id="shopping">
+      <div class="text">
+        <span> Sneaker Company </span>
+        <h1>        Fall Limited Edition Sneakers        </h1>
+        <p class="p">
+
+          These low-profile sneakers are your perfect casual wear companion. Featuring a 
+          durable rubber outer sole, they’ll withstand everything the weather can offer.
+        </p>
+        <span class="span1"> $125.00</span>
+        <span class="span2">  50%</span>
+        <p class="pars" style="    text-decoration: line-through;" > $250.00</p>
+
+        <div class="button">
+          <div data-aos="fade-left" class="button1">
+            <img id="minus" src="images/icon-minus.svg" alt="" srcset="">
+            <p id="p">0</p>
+            <img id="plus" src="images/icon-plus.svg" alt="" srcset="">
+          </div>
+          <div  data-aos="fade-right" class="button2" id="button2">
+            <img src="images/icon-cart.svg" alt="" srcset="">
+            <p> Add to cart</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- عرض صور المنتج -->
+    <!-- طلب الاوردر -->
+  </div>
+  <!-- دة الى شايل عرض المنتج و طلب الاوردر -->
+</div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="min.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
